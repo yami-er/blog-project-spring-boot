@@ -1,0 +1,29 @@
+html{
+    background-color: #eee;
+    padding:0.5em 1em;
+
+}
+h1,h2,h3,h4{
+    color:blueviolet;
+    display: block;
+    text-align: center;
+
+}
+label{
+    display: inline-block;
+    width: 200px;
+    margin: 5px;
+    text-align: left;
+}
+button{
+    margin: 10px;
+    padding: 10px;
+}
+input[type = text]{
+    display:inline-block;
+    width: 200px;
+} 
+
+
+
+
