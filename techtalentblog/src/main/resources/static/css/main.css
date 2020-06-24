@@ -18,11 +18,22 @@ label{
 button{
     margin: 10px;
     padding: 10px;
+    align-self: center;
+    
 }
 input[type = text]{
     display:inline-block;
     width: 200px;
 } 
+.col-xl{
+    text-align: center;
+}
+
+
+
+.col-md{
+text-align: center;
+}
 
 
 
