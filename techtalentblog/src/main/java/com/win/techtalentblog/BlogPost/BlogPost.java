@@ -9,22 +9,24 @@ import javax.persistence.Id;
 public class BlogPost {
 
     @Id
-    
+
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String title, author,blogEntry;
 
-    public BlogPost(String title, String author, String blogEntry){
-        this.title = title;
-        this.author= author;
-        this.blogEntry= blogEntry;
+    private String title, author, blogEntry;
+
+    public BlogPost() {
+        // non-argument constructor for JPA
     }
+
+    public BlogPost(String title, String author, String blogEntry) {
+        this.title = title;
+        this.author = author;
+        this.blogEntry = blogEntry;
+    }
+
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getTitle() {
@@ -50,8 +52,10 @@ public class BlogPost {
     public void setBlogEntry(String blogEntry) {
         this.blogEntry = blogEntry;
     }
+
     @Override
     public String toString() {
         return "BlogPost [author=" + author + ", blogEntry=" + blogEntry + ", id=" + id + ", title=" + title + "]";
     }
+
 }

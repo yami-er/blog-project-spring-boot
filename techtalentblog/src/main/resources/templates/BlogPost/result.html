@@ -18,9 +18,9 @@
 				<p>Here is the information you entered.</p>
 
 				<!-- <h4>Blog Post</h4> -->
-				<p th:text="${title}" />
-				<p th:text="${author}" />
-				<p th:text="${blogEntry}" />
+					<p th:text="${blogPost.title}" />
+					<p th:text="${blogPost.author}" />
+					<p th:text="${blogPost.blogEntry}" />
 			</div>
 		</div>
 
@@ -32,6 +32,9 @@
 				<a href="/blogposts/new">
 					<button class="btn btn-secondary">Create Another Blog Post</button>
 				</a>
+				<a href="#" th:href="@{blogposts/{id}(id=${blog.id})}">
+					<button class="btn btn-light">Edit This Post</button>
+				  </a>
 			</div>
 		</div>
     </div>
